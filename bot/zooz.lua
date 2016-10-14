@@ -213,38 +213,67 @@ function create_config( )
   config = {
     enabled_plugins = {
 	"admin",
-    "onservice",
-    "inrealm",
-    "ingroup",
-    "inpm",
-    "banhammer",
-    "stats",
-    "anti_spam",
-    "owners",
-    "arabic_lock",
-    "set",
-    "get",
-    "broadcast",
-    "invite",
-    "all",
-    "leave_ban",
+	"ali_nofel",
+	"addreply",
+	"addsudo",
+	"all",
+	"anti_spam",
+	"arabic_lock",
+	"badword",
+	"banhammer",
+	"broadcast",
+	"delete",
+	"deletekick",
+	"get",
+	"getfile",
+	"getlink",
+	"hello",
+	"help",
+	"image",
+	"info",
+	"inrealm",
+	"insta",
+	"invite",
+	"isup",
+	"kickme",
+	"leave_ban",
+	"lock_media",
+	"lock_bot",
+	"lock_fwd",
+	"M_zooz",
+	"map",
+	"me",
+	"msg_checks",
+	"newgroups",
+	"onservice",
+	"owners",
+	"plugins",
+	"set",
+	"sethello",
+	"stats",
+	"sticker",
 	"supergroup",
+	"textphoto",
+	"tgto",
+	"thinks",
+	"voice",
 	"whitelist",
-	"msg_checks"
+	"zooz",
+	"zooz_a",
+	"zooz1",
+	"zooz2",
+	"zooz3",
+	
     },
-    sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {146523692,0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v4
+    about_text = [[zooz v1
 An advanced administration bot based on TG-CLI written in Lua
 
-https://github.com/sajjad94/ASD_KARBALA
+https://github.com/alinofel/zooz
 
 Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@POTUS [Developer]
-@seyedan25 [Manager]
-@aRandomStranger [Admin]
+@ali_nofel [Founder]
 
 Special thanks to
 awkward_potato
@@ -252,9 +281,7 @@ Siyanew
 topkecleon
 Vamptacus
 
-Our channels
-@teleseedch [English]
-@iranseed [persian]
+
 
 Our website 
 http://teleseed.seedteam.org/
