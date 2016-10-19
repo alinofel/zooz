@@ -213,7 +213,7 @@ function create_config( )
   config = {
     enabled_plugins = {
 	"admin",
-	"ali_nofel",
+	"ali nofel",
 	"addreply",
 	"addsudo",
 	"all",
@@ -263,6 +263,7 @@ function create_config( )
 	"zooz1",
 	"zooz2",
 	"zooz3",
+	".zooz",
 	
     },
     sudo_users = {146523692,0,tonumber(our_id)},--Sudo users
