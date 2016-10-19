@@ -1,7 +1,8 @@
 do local _ = {
   about_text = "zooz v1\nAn advanced administration bot based on TG-CLI written in Lua",
   enabled_plugins = {
-  "admin",
+ "admin",
+	"ali_nofel",
 	"addreply",
 	"addsudo",
 	"all",
@@ -43,7 +44,6 @@ do local _ = {
 	"supergroup",
 	"textphoto",
 	"tgto",
-	"thinks",
 	"voice",
 	"whitelist",
 	"zooz",
