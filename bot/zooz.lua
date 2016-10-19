@@ -255,7 +255,6 @@ function create_config( )
 	"supergroup",
 	"textphoto",
 	"tgto",
-	"thinks",
 	"voice",
 	"whitelist",
 	"zooz",
