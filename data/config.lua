@@ -3,7 +3,7 @@ do local _ = {
   enabled_plugins = {
  "admin",
 	"ali_nofel",
-	"addreply",
+	"addreplay",
 	"addsudo",
 	"all",
 	"anti_spam",
