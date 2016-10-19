@@ -34,7 +34,7 @@ local msgss = 0
  text = text.."\n"..cb_extra.msg_text 
  send_large_msg(receiver, text) 
 end 
-local function th3boss(msg, matches) 
+local function zooz(msg, matches) 
     local receiver = get_receiver(msg) 
  if not is_momod(msg) then 
   return " للمشرفين فقط😐🚬 "
