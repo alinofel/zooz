@@ -283,8 +283,7 @@ Vamptacus
 
 
 
-Our website 
-http://teleseed.seedteam.org/
+
 ]],
     help_text_realm = [[
 Realm Commands:
