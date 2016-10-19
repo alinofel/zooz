@@ -213,6 +213,7 @@ function create_config( )
   config = {
     enabled_plugins = {
 	"admin",
+	"ali_nofel",
 	"addreply",
 	"addsudo",
 	"all",
