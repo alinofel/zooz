@@ -9,7 +9,7 @@
 --]]
 do
 
-local function run(msg, matches)
+local function Ali(msg, matches)
 local reply_id = msg['id']
 if is_sudo(msg) and matches[1]== "م المطور" then
 local S = [[  
@@ -45,6 +45,6 @@ usage = "Help list",
 patterns = {
 "^(م المطور)$",
 },
-run = run 
+run = Ali
 }
 end
