@@ -1130,7 +1130,7 @@ local function set_supergroup_photo(msg, success, result)
 end
 
 --Run function
-local function run(msg, matches)
+local function alinofel(msg, matches)
     if msg.to.type == 'chat' then
         if matches[1] == 'ترقيه سوبر' then
             if not is_admin1(msg) then
@@ -2168,7 +2168,7 @@ return {
     "%[(contact)%]",
     "^!!tgservice (.+)$",
   },
-  run = run,
+  run = alinofel,
   pre_process = pre_process
 }
 --End supergrpup.lua
