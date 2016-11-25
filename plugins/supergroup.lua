@@ -412,10 +412,9 @@ local function unlock_group_rtl(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_rtl'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'تـــ❗️ــم فتــ⏯ـــح الاضــ➕ـــافه الجماعـــ👨‍👩‍👧‍👦ــية 😽🎈 \n🔹بواسطة :'..msg.from.first_name..'\n' 
+    return 'تـــ❗️ــم قفــ⏹ـــل الملصـــ💕ــقات 😽🎈 \n🔹بواسطة :'..msg.from.first_name..'\n' 
    ..'🔸بواسطة :('..msg.from.id..')\n'
    ..'🔹بواسطة :(@'..(msg.from.username or 'لا يوجد')..')\n'
-   
   end
 end
 
@@ -425,11 +424,16 @@ local function lock_group_sticker(msg, data, target)
   end
   local group_sticker_lock = data[tostring(target)]['settings']['lock_sticker']
   if group_sticker_lock == 'yes' then
-    return 'الملصقات بالفعل ☑️ تم قفلها 🔐✋\n🔺Order By : @'..msg.from.username..'\n🔻Order By : '.. msg.from.id..'\n'
+    return 'الملصـــ💕ــقات مقـــ🔒ــفلة بلفــــ✔️ـعل 😼❗️ \n🔹بواسطة :'..msg.from.first_name..'\n' 
+   ..'🔸بواسطة :('..msg.from.id..')\n'
+   ..'🔹بواسطة :(@'..(msg.from.username or 'لا يوجد')..')\n'
   else
     data[tostring(target)]['settings']['lock_sticker'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'تم ☑️ قفل 🔒 الملصقات ✋\n🔺Order By : @'..msg.from.username..'\n🔻Order By : '.. msg.from.id..'\n'
+    return 'تـــ❗️ــم قفــ⏹ـــل الملصـــ💕ــقات 😽🎈 \n🔹بواسطة :'..msg.from.first_name..'\n' 
+   ..'🔸بواسطة :('..msg.from.id..')\n'
+   ..'🔹بواسطة :(@'..(msg.from.username or 'لا يوجد')..')\n'
+   
   end
 end
 
@@ -439,11 +443,15 @@ local function unlock_group_sticker(msg, data, target)
   end
   local group_sticker_lock = data[tostring(target)]['settings']['lock_sticker']
   if group_sticker_lock == 'no' then
-    return 'الملصقات بالفعل ☑️ تم فتحها 🔓✋\n🔺Order By : @'..msg.from.username..'\n🔻Order By : '.. msg.from.id..'\n'
+    return 'الملصـــ💕ــقات مفـــ🔓ــتوحة بلفــــ✔️ـعل 😼❕ \n🔹بواسطة :'..msg.from.first_name..'\n' 
+   ..'🔸بواسطة :('..msg.from.id..')\n'
+   ..'🔹بواسطة :(@'..(msg.from.username or 'لا يوجد')..')\n'
   else
     data[tostring(target)]['settings']['lock_sticker'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'تم ☑️ فتح 🔓 الملصقات\n🔺Order By : @'..msg.from.username..'\n🔻Order By : '.. msg.from.id..'\n'
+    return 'تـــ❗️ــم فتــ⏯ـــح الملصـــ💕ــقات 😽🎈 \n🔹بواسطة :'..msg.from.first_name..'\n' 
+   ..'🔸بواسطة :('..msg.from.id..')\n'
+   ..'🔹بواسطة :(@'..(msg.from.username or 'لا يوجد')..')\n'
   end
 end
 
@@ -453,11 +461,15 @@ local function lock_group_contacts(msg, data, target)
   end
   local group_rtl_lock = data[tostring(target)]['settings']['lock_contacts']
   if group_contacts_lock == 'yes' then
-    return 'جهات الاتصال بالفعل ☑️ تم قفلها🔒✋\n🔺Order By : @'..msg.from.username..'\n🔻Order By : '.. msg.from.id..'\n'
+    return 'جهــ📑ـــات الاتصــ☎️ـــال مقـــ🔒ــفلة بلفــــ✔️ـعل 😼❗️ \n🔹بواسطة :'..msg.from.first_name..'\n' 
+   ..'🔸بواسطة :('..msg.from.id..')\n'
+   ..'🔹بواسطة :(@'..(msg.from.username or 'لا يوجد')..')\n'
   else
     data[tostring(target)]['settings']['lock_contacts'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'تم ☑️ قفل 🔒 جهة الاتصال😽\n🔺Order By : @'..msg.from.username..'\n🔻Order By : '.. msg.from.id..'\n'
+    return 'تـــ❗️ــم قفــ⏹ـــل جهــ📑ـــات الاتصــ☎️ـــال 😽🎈 \n🔹بواسطة :'..msg.from.first_name..'\n' 
+   ..'🔸بواسطة :('..msg.from.id..')\n'
+   ..'🔹بواسطة :(@'..(msg.from.username or 'لا يوجد')..')\n'
   end
 end
 
@@ -467,11 +479,15 @@ local function unlock_group_contacts(msg, data, target)
   end
   local group_contacts_lock = data[tostring(target)]['settings']['lock_contacts']
   if group_contacts_lock == 'no' then
-    return 'جهات الاتصال بالفعل ☑️ تم فتحها 🔓\n🔺Order By : @'..msg.from.username..'\n🔻Order By : '.. msg.from.id..'\n'
+    return 'جهــ📑ـــات الاتصــ☎️ـــال مفـــ🔓ــتوحة بلفــــ✔️ـعل 😼❕ \n🔹بواسطة :'..msg.from.first_name..'\n' 
+   ..'🔸بواسطة :('..msg.from.id..')\n'
+   ..'🔹بواسطة :(@'..(msg.from.username or 'لا يوجد')..')\n'
   else
     data[tostring(target)]['settings']['lock_contacts'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'تم ☑️ فتح 🔓 جهات الاتصال✋\n🔺Order By : @'..msg.from.username..'\n🔻Order By : '.. msg.from.id..'\n'
+    return 'تـــ❗️ــم قفــ⏹ـــل جمــ📱ـــيع الاعــــ🗜ـدادات 😽🎈 \n🔹بواسطة :'..msg.from.first_name..'\n' 
+   ..'🔸بواسطة :('..msg.from.id..')\n'
+   ..'🔹بواسطة :(@'..(msg.from.username or 'لا يوجد')..')\n'
   end
 end
 
@@ -481,11 +497,15 @@ local function enable_strict_rules(msg, data, target)
   end
   local group_strict_lock = data[tostring(target)]['settings']['strict']
   if group_strict_lock == 'yes' then
-    return 'تم بالفعل ☑️ قفل 🔒 جميع الاعدادات 👊🙀\n🔺Order By : @'..msg.from.username..'\n🔻Order By : '.. msg.from.id..'\n'
+    return 'جمــ📱ـــيع الاعــــ🗜ـدادات مقـــ🔒ــفلة بلفــــ✔️ـعل 😼❗️ \n🔹بواسطة :'..msg.from.first_name..'\n' 
+   ..'🔸بواسطة :('..msg.from.id..')\n'
+   ..'🔹بواسطة :(@'..(msg.from.username or 'لا يوجد')..')\n'
   else
     data[tostring(target)]['settings']['strict'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'تم ☑️ قفل 🔒 جميع الاعدادات ✋😽\n🔺Order By : @'..msg.from.username..'\n🔻Order By : '.. msg.from.id..'\n'
+    return 'تـــ❗️ــم قفــ⏹ـــل جمــ📱ـــيع الاعــــ🗜ـدادات 😽🎈 \n🔹بواسطة :'..msg.from.first_name..'\n' 
+   ..'🔸بواسطة :('..msg.from.id..')\n'
+   ..'🔹بواسطة :(@'..(msg.from.username or 'لا يوجد')..')\n'
   end
 end
 
@@ -495,11 +515,15 @@ local function disable_strict_rules(msg, data, target)
   end
   local group_strict_lock = data[tostring(target)]['settings']['strict']
   if group_strict_lock == 'no' then
-    return 'تم بالفعل ☑️ فتح 🔓 جميع الاعدادات 👊😽\n🔺Order By : @'..msg.from.username..'\n🔻Order By : '.. msg.from.id..'\n'
+    return 'جمــ📱ـــيع الاعــــ🗜ـدادات مفـــ🔓ــتوحة بلفــــ✔️ـعل 😼❕ \n🔹بواسطة :'..msg.from.first_name..'\n' 
+   ..'🔸بواسطة :('..msg.from.id..')\n'
+   ..'🔹بواسطة :(@'..(msg.from.username or 'لا يوجد')..')\n'
   else
     data[tostring(target)]['settings']['strict'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'تم ☑️ فتح 🔓 جميع الاعدادات ✋😽\n🔺Order By : @'..msg.from.username..'\n🔻Order By : '.. msg.from.id..'\n'
+    return 'تـــ❗️ــم فتــ⏯ـــح جمــ📱ـــيع الاعــــ🗜ـدادات 😽🎈 \n🔹بواسطة :'..msg.from.first_name..'\n' 
+   ..'🔸بواسطة :('..msg.from.id..')\n'
+   ..'🔹بواسطة :(@'..(msg.from.username or 'لا يوجد')..')\n'
   end
 end
 --End supergroup locks
@@ -1130,9 +1154,9 @@ local function set_supergroup_photo(msg, success, result)
 end
 
 --Run function
-local function alinofel(msg, matches)
+local function run(msg, matches)
     if msg.to.type == 'chat' then
-        if matches[1] == 'ترقيه سوبر' then
+        if matches[1] == 'سوبر' then
             if not is_admin1(msg) then
                 return
             end
@@ -1140,7 +1164,7 @@ local function alinofel(msg, matches)
             chat_upgrade(receiver, ok_cb, false)
         end
     elseif msg.to.type == 'channel'then
-        if matches[1] == 'ترقيه سوبر' then
+        if matches[1] == 'سوبر' then
             if not is_admin1(msg) then
                 return
             end
@@ -2118,7 +2142,7 @@ return {
     "^([Kk]icked)$",
   "^(بلوك) (.*)",
     "^(بلوك)",
-    "^(ترقيه سوبر)$",
+    "^(سوبر)$",
     "^(ايدي)$",
     "^(ايدي) (.*)$",
     "^(مغادره)$",
@@ -2168,7 +2192,7 @@ return {
     "%[(contact)%]",
     "^!!tgservice (.+)$",
   },
-  run = alinofel,
+  run = run,
   pre_process = pre_process
 }
 --End supergrpup.lua
